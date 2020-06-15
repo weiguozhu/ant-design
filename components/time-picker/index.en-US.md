@@ -2,7 +2,7 @@
 category: Components
 type: Data Entry
 title: TimePicker
-cover: https://gw.alipayobjects.com/zos/alicdn/5YIZctT1O/TimePicker.svg
+cover: https://gw.alipayobjects.com/zos/alicdn/h04Zsl98I/TimePicker.svg
 ---
 
 To select/input a time.
@@ -42,7 +42,7 @@ import moment from 'moment';
 | inputReadOnly | Set the `readonly` attribute of the input tag (avoids virtual keyboard on touch devices) | boolean | false |  |
 | minuteStep | interval between minutes in picker | number | 1 |  |
 | open | whether to popup panel | boolean | false |  |
-| placeholder | display when there's no value | string | "Select a time" |  |
+| placeholder | display when there's no value | string \| \[string, string] | "Select a time" |  |
 | popupClassName | className of panel | string | - |  |
 | popupStyle | style of panel | CSSProperties | - |  |
 | secondStep | interval between seconds in picker | number | 1 |  |

@@ -2,7 +2,7 @@
 category: Components
 type: Data Entry
 title: Select
-cover: https://gw.alipayobjects.com/zos/alicdn/oCqbyNvbA/Select.svg
+cover: https://gw.alipayobjects.com/zos/alicdn/_0XzgOis7/Select.svg
 ---
 
 Select component to select value from options.
@@ -32,7 +32,7 @@ Select component to select value from options.
 | disabled | Whether disabled select | boolean | false |  |
 | dropdownClassName | className of dropdown menu | string | - |  |
 | dropdownMatchSelectWidth | Determine whether the dropdown menu and the select input are the same width. Default set `min-width` same as input. `false` will disable virtual scroll | boolean \| number | true |  |
-| dropdownRender | Customize dropdown content | (originNode: ReactNode, props) => ReactNode | - |  |
+| dropdownRender | Customize dropdown content | (originNode: ReactNode) => ReactNode | - |  |
 | dropdownStyle | style of dropdown menu | CSSProperties | - |  |
 | filterOption | If true, filter options by input, if function, filter options against it. The function will receive two arguments, `inputValue` and `option`, if the function returns `true`, the option will be included in the filtered set; Otherwise, it will be excluded. | boolean or function(inputValue, option) | true |  |
 | getPopupContainer | Parent Node which the selector should be rendered to. Default to `body`. When position issues happen, try to modify it into scrollable content and position it relative. [Example](https://codesandbox.io/s/4j168r7jw0) | function(triggerNode) | () => document.body |  |
@@ -46,7 +46,7 @@ Select component to select value from options.
 | notFoundContent | Specify content to show when no result matches.. | ReactNode | 'Not Found' |  |
 | options | Select options. Will get better perf than jsx definition | { label, value }[] | - |  |
 | optionFilterProp | Which prop value of option will be used for filter if filterOption is true | string | value |  |
-| optionLabelProp | Which prop value of option will render as content of select. [Example](https://codesandbox.io/s/antd-reproduction-template-tk678) | string | `value` for `combobox`, `children` for other modes |  |
+| optionLabelProp | Which prop value of option will render as content of select. [Example](https://codesandbox.io/s/antd-reproduction-template-tk678) | string | 'children' |  |
 | placeholder | Placeholder of select | string\|ReactNode | - |  |
 | showArrow | Whether to show the drop-down arrow | boolean | true |  |
 | showSearch | Whether show search input in single mode. | boolean | false |  |
@@ -59,7 +59,7 @@ Select component to select value from options.
 | value | Current selected option. | string\|string\[]<br />number\|number\[]<br />LabeledValue\|LabeledValue[] | - |  |
 | virtual | Disable virtual scroll when set to `false` | boolean | true | 4.1.0 |
 | onBlur | Called when blur | function | - |  |
-| onChange | Called when select an option or input value change, or value of input is changed in combobox mode | function(value, option:Option/Array&lt;Option>) | - |  |
+| onChange | Called when select an option or input value change | function(value, option:Option/Array&lt;Option>) | - |  |
 | onDeselect | Called when a option is deselected, param is the selected option's value. Only called for multiple or tags, effective in multiple or tags mode only. | function(string\|number\|LabeledValue) | - |  |
 | onFocus | Called when focus | function | - |  |
 | onInputKeyDown | Called when key pressed | function | - |  |
